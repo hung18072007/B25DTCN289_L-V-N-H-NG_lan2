@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hồ sơ cá nhân & Biểu mẫu liên hệ</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Lê Văn Hùng - Web Developer</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#skills">Kỹ năng</a></li>
+        <li><a href="#projects">Dự án</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Section Giới thiệu -->
+    <section id="about">
+      <h2>Giới thiệu bản thân</h2>
+      <img src="https://via.placeholder.com/150" alt="Ảnh đại diện của Lê Văn Hùng" width="150" height="150">
+      <p>Xin chào! Tôi là một lập trình viên đam mê phát triển web và xây dựng các hệ thống backend hiệu quả, linh hoạt.</p>
+      <p>Hiện tại, tôi tập trung rèn luyện kỹ năng lập trình web chuẩn cấu trúc ngữ nghĩa (Semantic HTML), tối ưu trải nghiệm người dùng và thiết kế API.</p>
+    </section>
+
+    <hr>
+
+    <!-- Section Kỹ năng -->
+    <section id="skills">
+      <h2>Kỹ năng chuyên môn</h2>
+      <ul>
+        <li>Ngôn ngữ: HTML5, CSS3, JavaScript, Python, C</li>
+        <li>Backend & Cơ sở dữ liệu: FastAPI, SQL (MySQL)</li>
+        <li>Công cụ & Quy trình: Git, GitHub, VS Code, Agile/Scrum</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Section Dự án -->
+    <section id="projects">
+      <h2>Dự án tiêu biểu</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Tên dự án</th>
+            <th>Công nghệ sử dụng</th>
+            <th>Vai trò</th>
+            <th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ứng dụng Quản lý chi tiêu cá nhân</td>
+            <td>HTML, CSS, JavaScript, LocalStorage</td>
+            <td>Frontend Developer</td>
+            <td>Hoàn thành</td>
+          </tr>
+          <tr>
+            <td>Hệ thống Quản lý kho & Đơn hàng</td>
+            <td>Python, FastAPI, MySQL</td>
+            <td>Backend Developer</td>
+            <td>Đang phát triển</td>
+          </tr>
+          <tr>
+            <td>Hệ thống Quản trị phòng Gym</td>
+            <td>SQL, ERD Database Design</td>
+            <td>Database Designer</td>
+            <td>Hoàn thành</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Section Liên hệ -->
+    <section id="contact">
+      <h2>Biểu mẫu liên hệ</h2>
+      <form action="#" method="POST">
+        <div>
+          <label for="fullname">Họ và tên:</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên..." required>
+        </div>
+        <br>
+
+        <div>
+          <label for="email">Địa chỉ Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="topic">Chủ đề liên hệ:</label><br>
+          <select id="topic" name="topic">
+            <option value="collaboration">Hợp tác công việc</option>
+            <option value="feedback">Góp ý & Nhận xét</option>
+            <option value="other">Vấn đề khác</option>
+          </select>
+        </div>
+        <br>
+
+        <div>
+          <label for="message">Nội dung tin nhắn:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50" placeholder="Viết tin nhắn của bạn tại đây..." required></textarea>
+        </div>
+        <br>
+
+        <fieldset>
+          <legend>Phương thức ưu tiên nhận phản hồi:</legend>
+          <input type="radio" id="reply-email" name="reply_method" value="email" checked>
+          <label for="reply-email">Qua Email</label><br>
+
+          <input type="radio" id="reply-phone" name="reply_method" value="phone">
+          <label for="reply-phone">Qua Điện thoại</label>
+        </fieldset>
+        <br>
+
+        <div>
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">Tôi đồng ý cho phép xử lý thông tin để nhận phản hồi</label>
+        </div>
+        <br>
+
+        <div>
+          <button type="submit">Gửi thông tin</button>
+          <button type="reset">Làm mới</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <hr>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Lê Văn Hùng. Mọi quyền được bảo lưu.</p>
+    <p>Kết nối: 
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>
